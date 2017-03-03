@@ -1,19 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Fitness App</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Fitness App</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <div id="top-bar">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">WoTD</a></li>
-            <li><a href="">Team</a></li>
-        </ul>
-        <img src="images/weight.jpg">
-        <h1>Hello Guys!</h1>
-    </div>
+  <div id="top-bar">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">WoTD</a></li>
+      <li><a href="">Team</a></li>
+    </ul>
+    <img src="images/weight.jpg">
+    <h1>Hello Guys!</h1>
+  </div>
+
+  <!-- The following contains the script for tabs running on the page -->
+  <div class="tab">
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Home')">Home</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'WoTD')">WoTD</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Team')">Team</a>
+  </div>
+
+  <div id="Home" class="tabcontent">
+    <h3>Home</h3>
+    <p>This is the home tab. It is going to be homey.</p>
+  </div>
+
+  <div id="WoTD" class="tabcontent">
+    <h3>WoTD</h3>
+    <p>This is the WoTD tab.</p>
+  </div>
+
+  <div id="Team" class="tabcontent">
+    <h3>Team</h3>
+    <p>This is the Team tab. It will have info about our team.</p>
+  </div>
+
 </body>
+
+<script>
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
 </head>

@@ -9,21 +9,25 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+	color: white;
+	position:center;
 }
 
 #top-bar > img {
-    margin-top: -50px;
+    margin-top: 50px;
     margin-right: 15px;
-    float: right;
+    float: center;
     display: block;
-    width: 25%;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
 
 h1 {
     color: lightblue;
     text-align: center;
+	font-size: 60px;
+	font-family: Comic Sans MS;
 }
 
 li {
@@ -31,4 +35,31 @@ li {
     list-style-type: none;
     padding-right: 20px;
     font-size: 20px;
+	color: white;
+}
+
+p {
+	color: white;
+	font-family: Gensans-serif;
+	font-size: 18px;
+	font-weight: 20px;
+	
+}
+
+button {
+	
+	color: white;
+	height: 150px;
+	width: 400px;
+}
+
+form {
+	color:white;
+	font-size: 20px;
+	
+}
+
+footer {
+	
+	color: white:
 }

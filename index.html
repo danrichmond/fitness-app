@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fitness App</title>
+  <meta charset="utf-8" />
+   <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<<<<<<< HEAD
+  <div id="top-bar">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">WoTD</a></li>
+      <li><a href="">Team</a></li>
+      <li><a href="">Dan</a></li>
+    </ul>
+    <img src="images/weight.jpg">
+    <h1>Hello Guys!</h1>
+  </div>
+
+  <!-- The following contains the script for tabs running on the page -->
+  <div class="tab">
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Home')">Home</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'WoTD')">WoTD</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Team')">Team</a>
+  </div>
+
+  <div id="Home" class="tabcontent">
+    <h3>Home</h3>
+    <p>This is the home tab. It is going to be homey.</p>
+  </div>
+
+  <div id="WoTD" class="tabcontent">
+    <h3>WoTD</h3>
+    <p>This is the WoTD tab.</p>
+  </div>
+
+  <div id="Team" class="tabcontent">
+    <h3>Team</h3>
+    <p>This is the Team tab. It will have info about our team.</p>
+  </div>
+
+=======
+    <div id="top-bar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">WoTD</a></li>
+            <li><a href="">Team</a></li>
+			<li><a href="">Contact</a></li>
+        </ul>
+<<<<<<< HEAD
+        <h1>IUP FITNESS</h1>
+		<img src="images/weight.jpg">
+    <center>   <button>ENTER IF YOU DARE</button> <center>
+    </div>
+	<h1> Application Requirements</h1>
+	
+		
+		<center><ol>
+		<li>Select Sport  <br/>   </li>
+		
+		<form action="">
+  <input type="radio" name="sport" value="football"> Football<br>
+  <input type="radio" name="sport" value="basketball"> Basketball<br>
+  
+</form> <hr>
+		<li>Select Sex <br/>   </li>
+		<form action="">
+  <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Idk
+</form> <hr>
+		<!--<li>Select Position <br/>   </li>
+		<li>Select Weight <br/>   </li>
+		<li>Select Height <br/>   </li>
+		<li>Select Weight <br/>   </li>
+		
+		-->
+	<center></ol>
+
+=======
+        <img src="images/weight.jpg">
+<<<<<<< HEAD
+        <h1>Hello Aziz!</h1>
+=======
+        <h1>Fitnesss Finess!</h1>
+>>>>>>> f9686ecacf9835918c4091f877781ac91ac20e52
+    </div>
+	<h1> Application Requirements</h1>
+	<p>
+	<ul>
+	<li></li>
+
+	</ul>
+	</p>
+>>>>>>> bf19943c17cc44788b88ab98a1a7721c342594c4
+>>>>>>> 3e572975dc0e2ddaf767a0f1d703a79d23176561
+</body>
+
+<script>
+function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</head>
+<footer>
+Danny Bitchmond
+</footer>
+</html>
